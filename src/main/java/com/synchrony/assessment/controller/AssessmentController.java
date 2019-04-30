@@ -40,5 +40,6 @@ public class AssessmentController {
 		System.out.println("getUser Detail");
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
+	
 
 }
