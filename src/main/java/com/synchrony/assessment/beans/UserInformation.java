@@ -1,5 +1,6 @@
 package com.synchrony.assessment.beans;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,7 +20,11 @@ public class UserInformation {
 
 	private String password;
 
+	@Column
 	private String albumId;
+
+	@Column(name = "DELETE_ALBUM_ID")
+	private String deleteAlbumId;
 
 	// private UserAddress address;
 
@@ -57,6 +62,14 @@ public class UserInformation {
 
 	public void setAlbumId(String albumId) {
 		this.albumId = albumId;
+	}
+
+	public String getDeleteAlbumId() {
+		return deleteAlbumId;
+	}
+
+	public void setDeleteAlbumId(String deleteAlbumId) {
+		this.deleteAlbumId = deleteAlbumId;
 	}
 
 	@Override

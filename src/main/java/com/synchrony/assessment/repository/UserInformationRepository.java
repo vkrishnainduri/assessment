@@ -11,4 +11,5 @@ import com.synchrony.assessment.beans.UserInformation;
 public interface UserInformationRepository extends CrudRepository<UserInformation, Long> {
 	@Query(name = "SELECT * FROM USER_DETAILS WHERE USER_NAME = :userName")
 	public UserInformation findByUserName(@Param("userName") String userName);
+
 }

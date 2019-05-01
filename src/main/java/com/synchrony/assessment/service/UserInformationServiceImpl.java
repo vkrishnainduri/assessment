@@ -23,4 +23,9 @@ public class UserInformationServiceImpl implements UserInformationService {
 		return userInformationRepository.findByUserName(userName);
 	}
 
+	@Override
+	public UserInformation updateUserInformationWithAlbumId(UserInformation userInformation) {
+		return userInformationRepository.save(userInformation);
+	}
+
 }
