@@ -1,0 +1,169 @@
+{
+	"id": "5bf9c396-a5e2-d1a1-eb4b-2849aaff72f2",
+	"name": "SynchronyAssessment",
+	"description": "",
+	"order": [
+		"44e6f41d-b038-8a58-34a4-3f756b57e9da",
+		"d6912d84-b618-1413-c2f2-34667008c5c5",
+		"ed606a01-8d49-98a5-d49d-0c1779621078",
+		"293f9535-5e68-188d-f48e-47b615a09460"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1556420761715,
+	"owner": "1942861",
+	"public": false,
+	"requests": [
+		{
+			"id": "293f9535-5e68-188d-f48e-47b615a09460",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556595075439,
+			"name": "UserRegistration",
+			"description": "",
+			"collectionId": "5bf9c396-a5e2-d1a1-eb4b-2849aaff72f2",
+			"responses": [],
+			"rawModeData": "{\"userName\":\"induri\",\"password\":\"induri\",\"address\":{\"addressLine1\":null,\"addressLine2\":null,\"city\":\"Hyderabad\",\"pincode\":null},\"phoneNumber\":null,\"email\":null}"
+		},
+		{
+			"id": "44e6f41d-b038-8a58-34a4-3f756b57e9da",
+			"headers": "Authorization: Basic aW5kdXJpOmluZHVyaQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aW5kdXJpOmluZHVyaQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/album",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "binary",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556731231810,
+			"name": "DeleteAlbum",
+			"description": "",
+			"collectionId": "5bf9c396-a5e2-d1a1-eb4b-2849aaff72f2",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "d6912d84-b618-1413-c2f2-34667008c5c5",
+			"headers": "Authorization: Basic aW5kdXJpOmluZHVyaQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aW5kdXJpOmluZHVyaQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/image/upload",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "Untitled.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556716078426,
+			"name": "CreateAlbum",
+			"description": "",
+			"collectionId": "5bf9c396-a5e2-d1a1-eb4b-2849aaff72f2",
+			"responses": []
+		},
+		{
+			"id": "ed606a01-8d49-98a5-d49d-0c1779621078",
+			"headers": "Authorization: Basic aW5kdXJpOmluZHVyaQ==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aW5kdXJpOmluZHVyaQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/album",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556728627639,
+			"name": "ViewAlbum",
+			"description": "",
+			"collectionId": "5bf9c396-a5e2-d1a1-eb4b-2849aaff72f2",
+			"responses": []
+		}
+	]
+}
