@@ -18,4 +18,9 @@ public class UserInformationServiceImpl implements UserInformationService {
 		return true;
 	}
 
+	@Override
+	public UserInformation userDetails(String userName) {
+		return userInformationRepository.findByUserName(userName);
+	}
+
 }

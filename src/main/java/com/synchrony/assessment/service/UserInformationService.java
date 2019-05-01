@@ -8,5 +8,7 @@ import com.synchrony.assessment.beans.UserInformation;
 public interface UserInformationService {
 
 	public Boolean registerUser(UserInformation userInformation);
+	
+	public UserInformation userDetails(String userName);
 
 }
