@@ -1,4 +1,4 @@
-package com.imgur.response;
+package com.synchrony.assessment.imgur.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

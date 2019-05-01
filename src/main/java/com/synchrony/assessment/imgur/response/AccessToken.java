@@ -1,4 +1,4 @@
-package com.imgur.response;
+package com.synchrony.assessment.imgur.response;
 
 import java.util.HashMap;
 import java.util.Map;

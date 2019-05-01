@@ -8,7 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import com.imgur.response.AlbumCreationResponse;
+import com.synchrony.assessment.imgur.response.AlbumCreationResponse;
 
 @Configuration
 public class ImgurAlbumServiceImpl implements ImgurAlbumService {

@@ -8,7 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import com.imgur.response.AccessToken;
+import com.synchrony.assessment.imgur.response.AccessToken;
 import com.synchrony.assessment.util.AssessmentConstants;
 
 @Configuration

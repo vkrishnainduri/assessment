@@ -2,7 +2,7 @@ package com.synchrony.assessment.service;
 
 import org.springframework.stereotype.Service;
 
-import com.imgur.response.AlbumCreationResponse;
+import com.synchrony.assessment.imgur.response.AlbumCreationResponse;
 
 @Service
 public interface ImgurAlbumService {

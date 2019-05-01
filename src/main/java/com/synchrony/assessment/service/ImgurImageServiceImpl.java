@@ -18,8 +18,8 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.imgur.response.AlbumResponse;
-import com.imgur.response.ImageCreationResponse;
+import com.synchrony.assessment.album.response.AlbumResponse;
+import com.synchrony.assessment.imgur.response.ImageCreationResponse;
 import com.synchrony.assessment.util.AssessmentConstants;
 
 @Configuration
