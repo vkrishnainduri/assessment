@@ -1,5 +1,7 @@
 package com.synchrony.assessment.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,14 +15,15 @@ import com.synchrony.assessment.service.UserInformationService;
 @Controller
 public class UserRegistrationController {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(UserRegistrationController.class);
+
 	@Autowired
 	private UserInformationService userInformationService;
 
-	@RequestMapping(name = "/user/register",method = RequestMethod.POST)
+	@RequestMapping(name = "/user/register", method = RequestMethod.POST)
 	@ResponseBody
 	public void registerUser(@RequestBody UserInformation userInformation) {
 		userInformationService.registerUser(userInformation);
 	}
 
-	
 }
